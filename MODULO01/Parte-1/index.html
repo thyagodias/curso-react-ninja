@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Módulo 1</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <!-- Adicionar o React. -->
+  <!-- Nota: ao fazer o deploy, substitua "development.js" por "production.min.js". -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  
+  <script type="text/babel">
+
+    const Title = React.createClass({
+      render: function() {
+        return <h1>Título React</h1>
+      }
+    })
+
+    ReactDOM.render(<Title />, document.getElementById('app'))
+    
+  </script>
+
+</body>
+
+</html>
